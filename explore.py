@@ -31,6 +31,5 @@ if __name__ == "__main__":
     url = get_db_url("spam_db")
     sql = "SELECT * FROM spam"
     df = pd.read_sql(sql, url, index_col="id")
-    df.head()
-    
+    print(df.head())
     """Explore codeup and inshorts"""
